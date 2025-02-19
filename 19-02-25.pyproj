@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>937f546e-bbd0-4b80-a49a-765609be92af</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>_19_02_25.py</StartupFile>
+    <StartupFile>19-02-25-(2).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="19-02-25-%282%29.py" />
     <Compile Include="_19_02_25.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
