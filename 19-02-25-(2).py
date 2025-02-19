@@ -1,14 +1,28 @@
 from tkinter import *
 from _19_02_25 import *
+global värv
+
+
+def värvi_valik():
+    värv = "white"
+    if tekst.get() != "":
+        tekst.configure(bg = "yellow")
+        värv = tekst.get()
+
+    else:
+        tekst.configure(bg = "red")
+    return värv
 
 def figuur():
+    global värv
     valik = var.get()
+    värv = värvi_valik()
     if valik == 1:
-        Vihmavari()
+        Vihmavari(värv)
     elif valik == 2:
-        Vaal()
+        Vaal(värv)
     else:
-        Prillid()
+        Prillid(värv)
         print("Joonistan hiljem")
 
 aken = Tk()
@@ -21,7 +35,13 @@ r1 = Radiobutton(aken, text = "Vihmavari", font = "Calibri 18", variable = var, 
 r2 = Radiobutton(aken, text = "Vaal", font = "Calibri 18", variable = var, value = 2, command = figuur)
 r3 = Radiobutton(aken, text = "Prillid", font = "Calibri 18", variable = var, value = 3, command = figuur)
 
-pealkiri.pack()
+tekst = Entry(aken, font = "Calibri 24", fg = "green", bg = "yellow", width = 100)
+
+nupp = Button(aken, text = "Värvi valik", font = "Calibri 24", command = värvi_valik)
+
+pealkiri.pack() # place(x = ..., y = ...), grid(column = ..., row = ...)
+tekst.pack()
+nupp.pack
 r1.pack()
 r2.pack()
 r3.pack()

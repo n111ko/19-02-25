@@ -1,7 +1,7 @@
 import numpy as np # x = [min,max]
 import matplotlib.pyplot as plt
 
-def Vaal():
+def Vaal(color:str):
     x1 = np.arange(0, 10, 1) #0, 1, 2, 3, 4, 5, 6, 7, 8, 9
     y1 = (2/27) * x1 ** 2 - 3
 
@@ -32,7 +32,7 @@ def Vaal():
     x10 = np.arange(3, 4, 0.5)
     y10 = [3] * len(x10)
 
-    plt.figure(facecolor = "lightgreen")
+    plt.figure(facecolor = color)
     plt.title("Vaal")
     plt.ylabel("Y")
     plt.xlabel("X")
@@ -42,10 +42,11 @@ def Vaal():
     ax.set_facecolor("lightblue")
 
     #plt.plot(x1, y1, "r:o")
-    colors = ["c", "m", "y", "r", "g", "b", "w", "k", "k", "k"]
+    #colors = ["c", "m", "y", "r", "g", "b", "w", "k", "k", "k"]
 
     for i in range(1, 11):
-        plt.plot(eval(f"x{i}"), eval(f"y{i}"), "b-*", colors[i-1]+"-*")
+        #plt.plot(eval(f"x{i}"), eval(f"y{i}"), colors[i-1]+"-*")
+        plt.plot(eval(f"x{i}"), eval(f"y{i}"), color[0] + "-*")
 
     plt.show()
 
@@ -78,10 +79,11 @@ def Vihmavari():
     ax.set_facecolor("lightblue")
 
     #plt.plot(x1, y1, "r:o")
-    colors = ["c", "m", "y", "r", "g", "b", "w", "k", "k", "k"]
+    #colors = ["c", "m", "y", "r", "g", "b", "w", "k", "k", "k"]
 
     for i in range(1, 7):
-        plt.plot(eval(f"x{i}"), eval(f"y{i}"), "b-*", colors[i-1]+"-*")
+        #plt.plot(eval(f"x{i}"), eval(f"y{i}"), colors[i-1]+"-*")
+        plt.plot(eval(f"x{i}"), eval(f"y{i}"), color[0] + "-*")
 
     plt.show()
 
@@ -117,9 +119,10 @@ def Prillid():
     ax.set_facecolor("lightblue")
 
     #plt.plot(x1, y1, "r:o")
-    colors = ["c", "m", "y", "r", "g", "b", "w", "k", "k", "k"]
+    #colors = ["c", "m", "y", "r", "g", "b", "w", "k", "k", "k"]
 
     for i in range(1, 8):
-        plt.plot(eval(f"x{i}"), eval(f"y{i}"), "b-*", colors[i-1]+"-*")
+        #plt.plot(eval(f"x{i}"), eval(f"y{i}"), colors[i-1]+"-*")
+        plt.plot(eval(f"x{i}"), eval(f"y{i}"), color[0] + "-*")
 
     plt.show()
