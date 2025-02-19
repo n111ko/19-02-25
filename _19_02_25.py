@@ -99,13 +99,13 @@ def Prillid():
     y4 = (1/4) * (x4 - 5) ** 2 - 3
 
     x5 = np.arange(-9, -5, 1)
-    y5 = -(x + 7) ** 2 + 5
+    y5 = -(x5 + 7) ** 2 + 5
 
     x6 = np.arange(6, 10, 1)
     y6 = -(x6 - 7) ** 2 + 5
 
     x7 = np.arange(-1, 2, 1)
-    y7 = (-0,5) * x7 ** 2 + 1.5
+    y7 = (-0.5) * x7 ** 2 + 1.5
 
     plt.figure(facecolor = "lightgreen")
     plt.title("Vaal")
