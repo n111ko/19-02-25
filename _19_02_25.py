@@ -31,7 +31,7 @@ y9 = [1] * len(x9)
 x10 = np.arange(3, 4, 0.5)
 y10 = [3] * len(x10)
 
-plt.figure(facecolor="lightgreen")
+plt.figure(facecolor = "lightgreen")
 plt.title("Vaal")
 plt.ylabel("Y")
 plt.xlabel("X")
@@ -44,4 +44,4 @@ ax.set_facecolor("lightblue")
 colors = ["c", "m", "y", "r", "g", "b", "w", "k", "k", "k"]
 
 for i in range(1, 11):
-    plt.plot(eval(f"x{i}"), eval(f"y{i}"), "b-*") #eval(f"{colors[i-1]}-*"))
+    plt.plot(eval(f"x{i}"), eval(f"y{i}"), "b-*", colors[i-1]+"-*")
